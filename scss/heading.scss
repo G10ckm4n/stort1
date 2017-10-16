@@ -1,0 +1,42 @@
+.heading {
+  width: 100%;
+
+  font-family: Roboto Slab, georgia, serif;
+  font-size: 2rem;
+
+  border: 0;
+
+  @media (min-width: 1200px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &--one {
+    margin-bottom: 60px;
+    font-size: 4.5rem;
+  }
+
+  &--um {
+    font-size: 3rem;
+  }
+  
+  &--two {
+    font-size: 2.25rem;
+  }
+
+  &--three {
+    font-size: 1.5rem;
+  }
+  &--four {
+    font-size: 1.25rem;
+	font-style: italic;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}

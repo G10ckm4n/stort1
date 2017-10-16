@@ -1,0 +1,27 @@
+
+section {
+  margin-bottom: 160px;
+}
+
+h1 {
+  border-bottom: 1px solid #999;
+}
+
+h2 {
+}
+
+hr {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border: 0;
+  border-bottom: 1px solid #999;
+}
+
+p {
+	margin-bottom: $gutter;
+}
+
+section > hr:last-of-type {
+  border: 0;
+}
+

@@ -1,0 +1,104 @@
+.header {
+  display: block;
+  position: sticky; 
+  top: 0px;
+  max-width: $max-width;
+  margin: 0 auto $gutter;
+}
+.header--image{
+  margin-top: -($gutter*5);
+  z-index:-1;
+}
+
+.header--bg--image{
+  max-width: $max-width;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto $gutter;
+}
+.header--heading{
+  font-family: Roboto Slab, georgia, serif;
+  margin-left: $gutter;
+  color: white;
+}
+.header--text{
+  margin-top: 10px;
+  margin-left: ($gutter*42);
+  margin-right: ($gutter*2);
+  color: white;
+  text-decoration: none;
+}
+
+.header--bg {  
+  filter: brightness(110%);
+}
+
+.header--bg--um {
+  margin-top: -($gutter*7);
+  filter: contrast(40%);
+}
+
+.header--button {
+  width: ($gutter*4);
+  font-size: 1rem;
+}
+
+.header--head{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  top:0;
+  background-color: rgba(0,0,0,.8);
+  z-index: 10000;
+}
+
+.header--um {
+  max-width: $max-width;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: ($gutter*5);
+  left:0;
+  right:0;
+  padding: $gutter;
+  z-index: 0;
+}
+
+.header--fade{
+  max-width: $max-width;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: ($gutter*14);
+  left:0;
+  right:0;
+  padding: $gutter;
+  z-index: 0;
+}
+
+@keyframes fader {
+  from{filter:opacity(0%);}
+  to{filter:opacity(100%);}
+}
+
+.header--fade1 {
+  line-height: 1.0;
+  font-weight: normal;
+  letter-spacing: -1.5px;
+  filter:opacity(100%);
+  animation-name: fader;
+  animation-duration: 1s;
+}
+
+.header--fade2{ 
+  text-shadow: 1px 0 black;
+  letter-spacing:-1.2px;
+  filter:opacity(100%);
+  animation-name: fader;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(1,0,0.8,1);
+}
+

@@ -1,0 +1,63 @@
+.button {
+  display: inline-block;
+
+  
+  max-width: 256px;
+  padding: 10px 5px;
+  margin: 0;
+
+  overflow: hidden;
+
+  font-family: Open Sans, helvetica, arial, sans-serif;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  background-color: #666;
+
+  border: 1px solid #666;
+  border-radius: 4px;
+
+  transition: background-color 500ms ease, color 500ms ease;
+
+  &:hover {
+    color: #eee;
+    background-color: #333;
+  }
+
+  &--inverted {
+    color: #666;
+    background-color: #eee;
+  }
+
+  &--inverted:hover {
+    color: #333;
+    background-color: #ccc;
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    color: #999;
+    background-color: #eee;
+    border-color: #eee;
+  }
+}
+
+ .button--fade{
+  padding: 10px 30px;
+  font-size: 2.25rem;
+  filter:opacity(100%);
+  animation-name: fader;
+  animation-timing-function: cubic-bezier(1,0,0.8,1);
+  animation-duration: 3s;
+}
+
+.button--body {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 2.25rem;
+}

@@ -1,0 +1,52 @@
+.text {
+  &__p {
+    padding-bottom: 3rem;
+  }
+  
+  &__pp{margin-bottom: $gutter;}
+}
+
+.text {
+  margin-top:2.25rem;
+}
+
+@keyframes sublime{
+  0%{color: white;}
+  50%{color: rgb(250,250,250)}
+  100%{color:white;}
+}
+
+.invisible {
+  color: white;
+  animation-name: sublime;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.button-area {
+  margin: 6.5rem;
+}
+
+.bottom--border{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+}
+
+.big--space {
+  margin-bottom: ($gutter*12);
+}
+
+.padd {
+  padding: $gutter;
+}
+
+.quote {
+  margin:($gutter*2);
+  width: ($gutter*16);
+  float: right;
+  
+  &--props{
+    font-size: 0.75rem;
+  }
+}
