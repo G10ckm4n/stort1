@@ -1,13 +1,17 @@
 .text {
+  margin-top:2.25rem;
+
   &__p {
-    padding-bottom: 3rem;
+    padding-bottom: 4.5rem;
   }
   
-  &__pp{margin-bottom: $gutter;}
-}
-
-.text {
-  margin-top:2.25rem;
+  &__pp{
+    margin-bottom: $gutter;
+  }
+  
+  &__input{
+    width: 100%;
+  }
 }
 
 @keyframes sublime{
@@ -24,7 +28,11 @@
 }
 
 .button-area {
-  margin: 6.5rem;
+  margin: ($gutter*6);
+  @media (max-width: 399px) {
+    margin-left: ($gutter*3);
+	margin-right: ($gutter*3);
+  }
 }
 
 .bottom--border{
@@ -33,8 +41,13 @@
   border-bottom-color: white;
 }
 
+.vert-align {
+  max-height: ($gutter*8);
+  min-height: ($gutter*4);
+}
+
 .big--space {
-  margin-bottom: ($gutter*12);
+  margin-bottom: ($gutter*16);
 }
 
 .padd {
@@ -44,6 +57,7 @@
 .quote {
   margin:($gutter*2);
   width: ($gutter*16);
+  max-width: 35%;
   float: right;
   
   &--props{

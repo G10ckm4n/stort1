@@ -2,7 +2,7 @@
   width: 100%;
 
   font-family: Roboto Slab, georgia, serif;
-  font-size: 2rem;
+  font-size: 1rem;
 
   border: 0;
 
@@ -10,26 +10,42 @@
     padding-right: 0;
     padding-left: 0;
   }
+  
+  @media (max-width: 599px) {
+    font-size: 0.75rem;
+  }
 
+  &--other {
+    font-size: 3rem;
+	@media (max-width: 399px) {
+	  font-size: 2.25rem;
+	}
+  }
+  
   &--one {
     margin-bottom: 60px;
     font-size: 4.5rem;
-  }
-
-  &--um {
-    font-size: 3rem;
+	@media (max-width: 599px) {
+	  font-size: 3.75rem;
+	}
+	@media (max-width: 399px){
+	  font-size: 3rem;
+	}
   }
   
   &--two {
     font-size: 2.25rem;
+	@media (max-width: 399px){
+	  font-size: 1.5rem;
+	}
   }
 
   &--three {
     font-size: 1.5rem;
-  }
-  &--four {
-    font-size: 1.25rem;
-	font-style: italic;
+	@media (max-width: 599px) {
+	  font-size: 1.5rem;
+	  letter-spacing: -1px;
+	}
   }
 }
 
@@ -40,3 +56,12 @@
 .bold {
   font-weight: bold;
 }
+
+.italic {
+  font-style: italic;
+}
+
+.white {
+  color: white;
+}
+

@@ -1,104 +1,143 @@
 .header {
-  display: block;
   position: sticky; 
   top: 0px;
   max-width: $max-width;
-  margin: 0 auto $gutter;
-}
-.header--image{
-  margin-top: -($gutter*5);
-  z-index:-1;
-}
-
-.header--bg--image{
-  max-width: $max-width;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  margin: 0 auto $gutter;
-}
-.header--heading{
-  font-family: Roboto Slab, georgia, serif;
-  margin-left: $gutter;
-  color: white;
-}
-.header--text{
-  margin-top: 10px;
-  margin-left: ($gutter*42);
-  margin-right: ($gutter*2);
-  color: white;
-  text-decoration: none;
-}
-
-.header--bg {  
-  filter: brightness(110%);
-}
-
-.header--bg--um {
-  margin-top: -($gutter*7);
-  filter: contrast(40%);
-}
-
-.header--button {
-  width: ($gutter*4);
-  font-size: 1rem;
-}
-
-.header--head{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  top:0;
-  background-color: rgba(0,0,0,.8);
-  z-index: 10000;
-}
-
-.header--um {
-  max-width: $max-width;
   margin: 0 auto;
-  width: 100%;
-  position: absolute;
-  top: ($gutter*5);
-  left:0;
-  right:0;
-  padding: $gutter;
-  z-index: 0;
+  
+  &--container{
+    width: 100%;
+	height: ($gutter*38);
+	overflow: hidden;
+    margin-top: -($gutter*5);
+    z-index:-1;
+	@media (max-width: 399px) {
+	  height: ($gutter*24);
+	}
+  }
+
+  &--other--container{
+    max-width: $max-width;
+	overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+  }
+  &--heading{
+    margin-top: 5px;
+    font-family: Roboto Slab, georgia, serif;
+	font-size: 1.25rem;
+    margin-left: $gutter;
+    color: white;
+	text-decoration: none;
+  }
+  &--text{
+    color: white;
+	text-decoration: none;
+	margin-right: $gutter;
+	vertical-align: 15px;
+	@media (max-width: 399px){
+	  vertical-align: -10px;
+	}
+  }
+  &--right {
+	width:100%;
+    text-align: right;
+	margin-right: $gutter;
+  }
+  &--bg {  
+    filter: brightness(120%);
+	min-width: $max-width;
+	min-height: ($gutter*40);
+	@media (max-width: 599px) {
+	  margin-left: -($gutter*16);	  
+	}
+	@media (max-width: 399px) {
+	  margin-left: 0px;
+	}
+  }
+
+  &--bg--other {
+    min-width: $max-width;
+    margin-top: -($gutter*6);
+    filter: contrast(80%);
+	@media (max-width: 599px) {
+	  margin-top: 0;
+      min-width: ($gutter*35);
+	  min-height: 300px;
+	  //margin-left: -($gutter*6);
+	}
+  }
+
+  &--button {
+    width: ($gutter*4);
+    font-size: 1rem;
+	@media (max-width: 399px){
+	  position: absolute;
+	  left: -100px;
+	}
+  }
+
+  &--head{
+    width: 100%;
+	display: flex;
+    padding: 5px;
+    background-color: rgba(0,0,0,.8);
+    z-index: 10000;
+	overflow: hidden;
+  }
+
+  &--other {
+    max-width: $max-width;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: ($gutter*5);
+    left:0;
+    right:0;
+    padding: $gutter;
+    z-index: 0;
+  }
+
+  &--fade{
+    max-width: $max-width;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: ($gutter*14);
+	
+    left:0;
+    right:0;
+    padding: $gutter;
+    z-index: 0;
+	@media (max-width: 399px) {
+	  top: ($gutter*4);
+	}
+  }
+
+  @keyframes fader {
+    from{filter:opacity(0%);}
+    to{filter:opacity(100%);}
+  }
+
+  &--fade1 {
+    line-height: 1.0;
+    font-weight: normal;
+    letter-spacing: -1.5px;
+    filter:opacity(100%);
+    animation-name: fader;
+    animation-duration: 1s;
+  }
+
+  &--fade2{ 
+    text-shadow: 1px 0 black;
+    letter-spacing:-1.2px;
+    filter:opacity(100%);
+    animation-name: fader;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(1,0,0.8,1);
+  } 
 }
 
-.header--fade{
-  max-width: $max-width;
-  margin: 0 auto;
-  width: 100%;
-  position: absolute;
-  top: ($gutter*14);
-  left:0;
-  right:0;
-  padding: $gutter;
-  z-index: 0;
-}
-
-@keyframes fader {
-  from{filter:opacity(0%);}
-  to{filter:opacity(100%);}
-}
-
-.header--fade1 {
-  line-height: 1.0;
-  font-weight: normal;
-  letter-spacing: -1.5px;
-  filter:opacity(100%);
-  animation-name: fader;
-  animation-duration: 1s;
-}
-
-.header--fade2{ 
-  text-shadow: 1px 0 black;
-  letter-spacing:-1.2px;
-  filter:opacity(100%);
-  animation-name: fader;
-  animation-duration: 2s;
-  animation-timing-function: cubic-bezier(1,0,0.8,1);
-}
 

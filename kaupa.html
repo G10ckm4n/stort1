@@ -1,0 +1,138 @@
+<!doctype html>
+<html class="grid" lang="is">
+<head>
+	<meta charset="utf-8">
+    <title>Stort-verkefni1-kaupa</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styleguide.css">
+
+</head>
+<body>
+	<div class="header header--head">
+		<a href="index.html" class="header--heading">Fooþjónustan</a>
+		<div class="header--right">
+			<a href="um.html" class="header--text">Um</a>
+			<a href="kaupa.html" class="header--button button">Kaupa</a>
+		</div>
+	</div>
+	<div class="header--other--container">
+		<img class="header--bg--other" alt="" src="bg-subpage.jpg"/>
+	</div>	
+	<div class="header--other">
+		<h1 class="heading heading--other white">Kaupa</h1>
+	</div>
+	<div class="big--space">
+	</div>
+	<main>
+		<section>
+			<form id="kaupa" action="" class="padd">
+				<div class="row">
+					
+					<div class="col col-1"></div>
+					<div class="col col-4 col-smlr-12">
+					
+						<h2 class="heading heading--three">Persónuupplýsingar</h2>
+						<label for="nafn" class="heading bold">Nafn:</label>
+						<input class="text__input" form="kaupa" type="text" id="nafn" name="nafn">
+					
+					
+						<label for="kennitala" class="heading bold">Kennitala:</label>
+						<input class="text__input" form="kaupa" type="text" id="kennitala" name="kennitala" value="123456-7890">
+					
+						
+						<h3 class="heading bold">Kyn:</h3>
+						<div class="button--radio">
+							<input type="radio" form="kaupa" id="kona" name="kona">
+							<label for="kona">Kona</label>
+						</div>
+						<div class="button--radio">
+							<input type="radio" form="kaupa" id="karl" name="karl">
+							<label for="karl">Karl</label>
+						</div>
+						<div class="button--radio">
+							<input type="radio" form="kaupa" id="annad" name="annad">
+							<label for="annad">Annað</label>
+						</div>
+						<label for="simi" class="heading bold">Sími:</label>
+						<input class="text__input" form="kaupa" type="text" id="simi" name="simi" value="+354 812 3456">
+						<label for="heimili" class="heading bold">Heimilisfang:</label>
+						<input class="text__input" form="kaupa" type="text" id="heimili" name="heimili">
+						
+						<input type="checkbox" form="kaupa" id="post" name="post">
+						<label for="post" class="heading bold">Skrá mig á póstlista</label>
+						
+					</div>
+					<div class="col col-2 col-smlr-12"></div>
+					<div class="col col-4 col-smlr-12">
+						<h3 class="heading heading--three">Greiðsluupplýsingar</h3>
+						<label for="greidaMed" class="heading bold">Greiða með:</label>
+						<select class="text__input" form="uppl" id="greidaMed" name="greidaMed">
+							<option value="Amex">Amex</option>
+							<option value="Visa">Visa</option>
+							<option value="Master">Master</option>
+						</select>
+					
+						<label class="heading bold" for="kortNafn">Nafn á korti:</label>
+						<input class="text__input" form="kaupa" type="text" id="kortNafn" name="kortNafn">
+						
+						<label class="heading bold" for="kortNumer">Kortanúmer:</label>
+						<input class="text__input" form="kaupa" type="text" id="kortNumer" name=kortNumer" value="5999-9999-9999-9999">
+					
+						<h3 class="heading bold">Gildistími:</h3>
+						<label for="gildisMan">Mán</label>
+						<select class="text__input" form="kaupa" id="gildisMan" name="gildiMan">
+							<option value="Jan">Jan</option>
+							<option value="Feb">Feb</option>
+							<option value="Mars">Mars</option>
+							<option value="Jan">April</option>
+							<option value="Feb">Mai</option>
+							<option value="Mars">June</option>
+							<option value="Jan">July</option>
+							<option value="Feb">August</option>
+							<option value="Mars">September</option>
+							<option value="Jan">October</option>
+							<option value="Feb">November</option>
+							<option value="Mars">December</option>
+						</select>
+						<label for="gildisAr">Ár</label>
+						<select class="text__input" form="kort" type="" id="gildisAr" name="gildisAr">
+							<option value="17">2017</option>
+							<option value="18">2018</option>
+							<option value="19">2019</option>
+							<option value="20">2020</option>
+							<option value="21">2021</option>
+							<option value="22">2022</option>
+						</select>					
+					</div>
+				</div>
+			</form>
+			<div class="row">
+				<div class="col col-12 center">
+					<button type="submit" form="kaupa" class="button button--body">Panta</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="row text__p">
+			<div class="col col-3 col-smlr-1"></div>
+			<div class="col col-3 col-smlr-5">
+				<p>Fooþjónustan</p>
+				<p>123-4567</p>
+			</div>
+			<div class="col col-3 col-smlr-6">
+				<p>Opið 12-13 alla daga</p>
+				<p>Bargata 1</p>
+				<p>900 Foobar</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-1"></div>
+			<div class="col col-10 col-sm-12 bottom--border"></div>
+		</div>
+		<p>© Fooþjónustan 2017</p>
+	</footer>
+</body>
+</html>

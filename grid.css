@@ -38,7 +38,7 @@ html.grid::before {
   max-width: var(--max_width);
   min-height: 100vh;
   content: '';
-  background-image: var(--background-columns);
+  //background-image: var(--background-columns);
   background-size: var(--background-width) 100%;
   z-index: 1000;
   pointer-events: none;
