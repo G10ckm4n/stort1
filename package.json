@@ -18,6 +18,6 @@
     "stylelint-config-primer": "^2.0.1"
   },
   "dependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.13.1"
   }
 }
